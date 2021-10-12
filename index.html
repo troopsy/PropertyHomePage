@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img id= "cogwheel" src="image/cogwheel.png" alt="cogwheel"  draggable="false">
+    <section>
+        <img id="background" src="image/2271.jpg" alt="background-img" class="background-img " >
+        <img id="hotballoon" src="image/air-hot-balloon.png" alt="Hot air baloon" class="items" draggable="false">
+        <img id="airplain" src="image/airplane.png" alt="Hot air baloon" class="items" draggable="false">
+        <img id="seagulls" src="image/three-seagulls.png" alt="seagulls" class="items" draggable="false">
+        <img src="image/bpi.png" alt="Hot air baloon" class="hab" draggable="false">
+        <button >LOG IN</button>
+    </section>
+    <div class="sec">
+        <h2>Property and Supply Office</h2>
+        <p></p>
+        <br><br>
+        <div class="box">
+        <h2 class="mis">
+            MISSION
+        </h2>
+        <p> &emsp; "We collaborate with the plant industry stakeholders to ensure the availability of high quality seeds and advanced farming technologies, maintaim the safety and integrity of plant food and support the export industry through proactive biosecurity.</p>
+
+        <h2 class="mis">
+            VISION
+            </h2>
+        <p> &emsp; "The BPI is a world-class, resilient and collaborative public sector organization continuously innovating to lead the development of the Philippine plant industry by 2030.</p>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+        <br><br>
+       </div>
+    <hr>
+    <footer class="sec">
+        <h2>
+            About
+        </h2>
+        <p>
+            692 San Andress Street, Malate, Manila.
+        </p>
+    </footer>
+    <script>
+        let background = document.getElementById('background');
+        let hotballoon = document.getElementById('hotballoon');
+        let airplain = document.getElementById('airplain');
+        let seagulls = document.getElementById('seagulls');
+        let cogwheel = document.getElementById('cogwheel');
+        window.addEventListener('scroll',function(){
+            let yscroll = window.scrollY;
+            background.style.objectPosition = '-'+yscroll+'px';
+            hotballoon.style.right = yscroll +'px';
+            seagulls.style.objectPosition = yscroll +'px';
+            airplain.style.objectPosition = yscroll * 2+'px';
+            cogwheel.style.transform  = 'rotate('+yscroll+'deg)';
+            console.log(yscroll);
+            cogwheel.style.bottom = yscroll-140+'px';
+        });
+    </script>s
+</body>
+</html>

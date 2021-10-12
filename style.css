@@ -1,0 +1,158 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(#016938,#3e4640);
+    min-width: 360px;
+    min-height: 640px;
+}
+section{
+position: relative;
+height: 100%;
+padding:100px;
+width:100%;
+min-width: 360px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    background: linear-gradient(to top,#1c0522);
+}
+section img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hab1{
+
+}
+section .background-img{
+    object-position: 0px;
+}
+#cogwheel{
+    position: fixed;bottom: -9em;left:-4.8em;width: 300px;height:auto;z-index: 99;
+}
+
+section button{
+    position: absolute;
+    font-size: 1.5em;
+    padding: 8px 30px;
+    z-index: 9;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 40px;
+    background: #016938;
+    color:white;
+    transform: translateY(100px);
+    cursor: pointer;
+    border-color: aquamarine;
+}
+section button:hover{
+    background: #fff;
+    color:#016938;
+    border-color: #016938;
+}
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+  }
+  .items {
+    animation: bounce 0.8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+.sec{
+    position: relative;
+    padding:100px;
+
+}
+.sec h2{
+    font-size: 3.5em;
+    color:#fff;
+    margin-bottom: 10px;
+}
+.mis{
+    font-size: 2em !important;
+
+
+}
+.sec p{
+    font-size: 1.5em;
+    color:#fff;
+}
+.box{ width:100%;background-color: white;align-items: center; text-align: center;
+    background-image: url('header.png'),url('footer.png');
+    background-repeat: no-repeat,no-repeat;
+    background-position: top left,right bottom;
+}
+.box h2{
+    padding-top: 2em;;
+    color: #000;
+}
+.box p{
+    padding-top: 3em;
+    color: #000;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #cogwheel{
+        display: none;;
+    }
+    .sec{
+        padding:0px 0px;
+    }
+    .box h2{
+        padding-top: 6em;
+    }
+    .sec h2{
+        padding-top: 1em;
+        font-size: 2.5em;
+    }
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .example {background: green;}
+    .box h2{
+        padding-top: 5em;
+    }
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .example {background: blue;}.box h2{
+    padding-top: 2em;;
+    color: #000;
+}
+.box h2{
+    padding-top: 2em;;
+    color: #000;
+}
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .example {background: orange;}
+    .box h2{
+        padding-top: 2em;;
+        color: #000;
+    }
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .example {background: pink;}
+    .box h2{
+        padding-top: 2em;;
+        color: #000;
+    }
+  }
